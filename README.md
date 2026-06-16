@@ -49,18 +49,54 @@ The project uses the `yfinance` library to fetch historical adjusted closing pri
 - The `backtest_static_portfolio` function evaluates the portfolio's performance based on historical data.
 - Outputs key portfolio metrics for decision-making.
 
-## 6. Dependencies
-Ensure you have the following Python libraries installed:
-```bash
-pip install numpy pandas scipy matplotlib yfinance
-```
+## 6. Setup and Installation
+
+### 6.1 Prerequisites
+- Python 3.8 or higher installed.
+
+### 6.2 Installation
+1. **Clone the repository** (if not already done):
+   ```bash
+   git clone <repository-url>
+   cd Static-and-Dyanamic-Portfolio-Optimization
+   ```
+
+2. **Create a virtual environment**:
+   ```bash
+   python -m venv .venv
+   ```
+
+3. **Activate the virtual environment**:
+   - **Windows (PowerShell)**:
+     ```powershell
+     .\.venv\Scripts\Activate.ps1
+     ```
+   - **Windows (CMD)**:
+     ```cmd
+     .\.venv\Scripts\activate.bat
+     ```
+   - **macOS/Linux**:
+     ```bash
+     source .venv/bin/activate
+     ```
+
+4. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## 7. Running the Code
-Simply execute the Python script, and it will:
+Simply execute the Jupyter Notebooks or Python scripts, and it will:
 1. Fetch historical data
 2. Optimize the portfolio using different methods
 3. Plot the cumulative return of each method
 4. Display performance metrics
+
+### 7.1 Using Jupyter Notebooks
+Open the following files in your preferred editor (VS Code, JupyterLab, etc.):
+- `Static_Portfolio.ipynb`: Standard optimization techniques.
+- `Dynamic_Portfolio.ipynb`: Tactical and dynamic strategies.
+- `Portfolio_Optimization.ipynb`: Advanced convex optimization engine.
 ### **Tactical Portfolio Management – Brief Explanation**  
 
 Tactical Portfolio Management involves adjusting stock positions dynamically based on quantitative strategies to maximize returns. This approach includes **shorting stocks, using momentum factors, and applying moving average and correlation-based strategies**.
